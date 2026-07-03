@@ -1,0 +1,52 @@
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-v4
+
+# 字符级兜底分块参数（第三层）
+chunk_size: 800
+chunk_overlap: 100
+separators:
+  - "\n\n"
+  - "。"
+  - "？"
+  - "！"
+  - "；"
+  - "\n"
+  - " "
+  - "\t"
+
+# MD5 去重存储
+md5_hex_store: md5.txt
+
+# 允许的文件类型
+allow_knowledge_file:
+  - txt
+  - pdf
+
+collection_name: agent
+persist_directory: faiss_db
+data_path: data
+
+# 结构感知预切割配置（第一层）
+parser:
+  # 问答对模式：匹配 "数字. 问题" 开头
+  qa_pattern: '(?=\n\d+\.\s)'
+  # 章节模式：匹配 "一、二、三" 等中文数字章节
+  chapter_pattern: '(?=\n[一二三四五六七八九十]+、)'
+  # 故障条目模式：匹配 "数字. 故障标题" 并紧跟 "故障现象"
+  fault_pattern: '(?=\n\d+\.\s.+?\n故障现象)'
+
+# 语义分块配置（第二层）
+semantic:
+  enabled: true
+  # 相似度阈值：相邻句子 embedding 余弦相似度低于此值时切割
+  # 值越低切得越少（保留更长块），值越高切得越多（块更短更聚焦）
+  breakpoint_threshold: 0.5
+  # 断点类型：percentile / standard_deviation / interquartile
+  breakpoint_type: percentile
+
+# 检索器配置
+retriever:
+  search_type: mmr
+  search_kwargs:
+    k: 4
+    fetch_k: 8

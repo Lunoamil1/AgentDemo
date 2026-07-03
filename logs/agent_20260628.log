@@ -1,0 +1,51 @@
+2026-06-28 17:40:44,534-agent-INFO-vector_store.py-57-空向量库已持久化到faiss_db
+2026-06-28 17:40:44,537-agent-INFO-vector_store.py-101-成功加载文件: 扫地机器人100问1.txt
+2026-06-28 17:40:44,540-agent-INFO-vector_store.py-101-成功加载文件: 扫地机器人100问2.txt
+2026-06-28 17:40:44,542-agent-INFO-vector_store.py-101-成功加载文件: 扫拖一体机器人100问.txt
+2026-06-28 17:40:44,545-agent-INFO-vector_store.py-101-成功加载文件: 故障排除.txt
+2026-06-28 17:40:44,547-agent-INFO-vector_store.py-101-成功加载文件: 维护保养.txt
+2026-06-28 17:40:44,548-agent-INFO-vector_store.py-101-成功加载文件: 选购指南.txt
+2026-06-28 17:40:44,549-agent-INFO-vector_store.py-108-开始三层切割，原始文档数: 6
+2026-06-28 17:40:44,549-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\扫地机器人100问1.txt, 类型: qa
+2026-06-28 17:40:44,551-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\扫地机器人100问2.txt, 类型: qa
+2026-06-28 17:40:44,552-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\扫拖一体机器人100问.txt, 类型: qa
+2026-06-28 17:40:44,553-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\故障排除.txt, 类型: fault
+2026-06-28 17:40:44,553-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\维护保养.txt, 类型: chapter
+2026-06-28 17:40:44,553-agent-INFO-doc_parser.py-45-[结构检测] 文件: C:\Users\0001\OneDrive\Desktop\AgentDemo\data\选购指南.txt, 类型: chapter
+2026-06-28 17:40:44,554-agent-INFO-doc_parser.py-60-[结构预切割] 输入 6 个文档，输出 360 个块
+2026-06-28 17:40:44,554-agent-INFO-vector_store.py-112-[第一层-结构切割] 6 → 360 个块
+2026-06-28 17:40:44,554-agent-INFO-semantic_splitter.py-63-[语义分块] 处理了 0 个超长块，输出 360 个块（含未处理的 360 个）
+2026-06-28 17:40:44,554-agent-INFO-vector_store.py-116-[第二层-语义分块] 360 → 360 个块
+2026-06-28 17:40:44,554-agent-INFO-vector_store.py-120-[第三层-字符兜底] 360 → 360 个块
+2026-06-28 17:41:21,892-agent-INFO-vector_store.py-130-成功存入 360 个文档块到向量库
+2026-06-28 17:41:36,130-agent-INFO-vector_store.py-51-已加载向量库: C:\Users\0001\OneDrive\Desktop\AgentDemo\faiss_db
+2026-06-28 17:41:49,279-agent-INFO-vector_store.py-51-已加载向量库: C:\Users\0001\OneDrive\Desktop\AgentDemo\faiss_db
+2026-06-28 17:47:28,921-agent-INFO-vector_store.py-51-已加载向量库: C:\Users\0001\OneDrive\Desktop\AgentDemo\faiss_db
+2026-06-28 17:47:28,921-agent-DEBUG-prompt_loader.py-34-成功加载提示词: rag_summarize_prompt_path (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/rag_summarize_prompt.txt)
+2026-06-28 17:47:41,328-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-28 17:47:54,832-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-28 17:48:24,791-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-28 17:48:24,792-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 智能机器人推荐
+2026-06-28 17:48:30,671-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-28 17:48:30,671-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '智能扫地机器人选购指南，包含不同预算、户型、地面材质、使用人群的推荐标准'}
+2026-06-28 17:48:39,393-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='根据参考资料，智能扫地机器人选购应结合预算、户型及使用需求：  \n- **入门千元级（基础基站）**：适合小户型、预算有限、能接受手动加水和洗拖布的用户，仅支持自动回充、断电续扫。  \n- **中端主流（自动洗拖布基站）**：具备自动清洗与风干/烘干拖布功能，懒人友好，适合大多数家庭，性价比高。  \n- **进阶省心（自动集尘基站）**：可自动抽取尘盒垃圾，15–30天免倒垃圾，适合养宠、长发或灰尘多的家庭。  \n- **旗舰顶配（全能基站）**：集成自动洗拖布、热风烘干、自动集尘、补水、排污及基站自清洁，几乎全程免人工打理，适合大户型、高端居家或极致懒人用户。  \n\n注意：功能越多价格与维护成本越高，小户型无需盲目选择全能基站。地面材质与具体使用人群未在参考资料中提及，故无对应推荐标准。' name='rag_summarize' tool_call_id='call_41151bc4e9bd4cf8b581388c'
+2026-06-28 17:48:39,395-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-28 17:48:39,395-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 根据参考资料，智能扫地机器人选购应结合预算、户型及使用需求：  
+- **入门千元级（基础基站）**：适合小户型、预算有限、能接受手动加水和洗拖布的用户，仅支持自动回充、断电续扫。  
+- **中端主流（自动洗拖布基站）**：具备自动清洗与风干/烘干拖布功能，懒人友好，适合大多数家庭，性价比高。  
+- **进阶省心（自动集尘基站）**：可自动抽取尘盒垃圾，15–30天免倒垃圾，适合养宠、长发或灰尘多的家庭。  
+- **旗舰顶配（全能基站）**：集成自动洗拖布、热风烘干、自动集尘、补水、排污及基站自清洁，几乎全程免人工打理，适合大户型、高端居家或极致懒人用户。  
+
+注意：功能越多价格与维护成本越高，小户型无需盲目选择全能基站。地面材质与具体使用人群未在参考资料中提及，故无对应推荐标准。
+2026-06-28 17:48:44,426-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-28 17:48:44,426-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫地机器人地面材质适配建议（木地板、瓷砖）及养宠家庭选购要点'}
+2026-06-28 17:48:47,965-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='瓷砖地面建议选择带振动加压拖地、大吸力、可中高水量出水的扫拖一体机型，以有效清除浮灰、美缝残留和污渍；参考资料未提及木地板适配建议。养宠家庭选购要点在参考资料中未涉及。' name='rag_summarize' tool_call_id='call_d78ce9ea8958434eb5cef18d'
+2026-06-28 17:48:47,966-agent-INFO-middleware.py-32-[before model]当前状态: 带有5条消息
+2026-06-28 17:48:47,966-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 瓷砖地面建议选择带振动加压拖地、大吸力、可中高水量出水的扫拖一体机型，以有效清除浮灰、美缝残留和污渍；参考资料未提及木地板适配建议。养宠家庭选购要点在参考资料中未涉及。
+2026-06-28 17:49:16,045-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-28 17:49:35,025-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-29 00:18:13,130-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-29 00:18:18,045-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-29 00:18:35,313-agent-DEBUG-prompt_loader.py-34-成功加载提示词: main_prompt (C:\Users\0001\OneDrive\Desktop\AgentDemo\prompts/main_prompt.txt)
+2026-06-29 00:22:05,767-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-29 00:22:05,768-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 尺码推荐

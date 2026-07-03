@@ -1,0 +1,169 @@
+2026-06-24 00:03:56,222-agent-INFO-vector_store.py-36-未检测到向量索引，初始化空FAISS库
+2026-06-24 00:03:57,054-agent-INFO-vector_store.py-44-空向量库已持久化到faiss_db
+2026-06-24 00:03:57,054-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫地机器人100问1.txt
+2026-06-24 00:03:57,055-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫地机器人100问2.txt
+2026-06-24 00:03:57,055-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫拖一体机器人100问.txt
+2026-06-24 00:03:57,055-agent-INFO-vector_store.py-113-文件已存在，跳过: 故障排除.txt
+2026-06-24 00:03:57,055-agent-INFO-vector_store.py-113-文件已存在，跳过: 维护保养.txt
+2026-06-24 00:03:57,056-agent-INFO-vector_store.py-113-文件已存在，跳过: 选购指南.txt
+2026-06-24 00:03:57,056-agent-INFO-vector_store.py-127-没有新文档需要处理
+2026-06-24 00:04:41,190-agent-INFO-vector_store.py-34-加载已有FAISS向量库成功
+2026-06-24 00:04:41,192-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫地机器人100问1.txt
+2026-06-24 00:04:41,193-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫地机器人100问2.txt
+2026-06-24 00:04:41,193-agent-INFO-vector_store.py-113-文件已存在，跳过: 扫拖一体机器人100问.txt
+2026-06-24 00:04:41,193-agent-INFO-vector_store.py-113-文件已存在，跳过: 故障排除.txt
+2026-06-24 00:04:41,194-agent-INFO-vector_store.py-113-文件已存在，跳过: 维护保养.txt
+2026-06-24 00:04:41,194-agent-INFO-vector_store.py-113-文件已存在，跳过: 选购指南.txt
+2026-06-24 00:04:41,194-agent-INFO-vector_store.py-127-没有新文档需要处理
+2026-06-24 00:04:41,194-agent-ERROR-vector_store.py-136-文档向量化存储失败: not enough values to unpack (expected 2, got 1)
+2026-06-24 00:05:59,979-agent-INFO-vector_store.py-36-未检测到向量索引，初始化空FAISS库
+2026-06-24 00:06:00,916-agent-INFO-vector_store.py-44-空向量库已持久化到faiss_db
+2026-06-24 00:06:00,918-agent-INFO-vector_store.py-123-成功加载文件: 扫地机器人100问1.txt
+2026-06-24 00:06:00,923-agent-INFO-vector_store.py-123-成功加载文件: 扫地机器人100问2.txt
+2026-06-24 00:06:00,924-agent-INFO-vector_store.py-123-成功加载文件: 扫拖一体机器人100问.txt
+2026-06-24 00:06:00,925-agent-INFO-vector_store.py-123-成功加载文件: 故障排除.txt
+2026-06-24 00:06:00,926-agent-INFO-vector_store.py-123-成功加载文件: 维护保养.txt
+2026-06-24 00:06:00,928-agent-INFO-vector_store.py-123-成功加载文件: 选购指南.txt
+2026-06-24 00:06:24,274-agent-INFO-vector_store.py-134-成功存入 218 个文档块到向量库
+2026-06-24 13:37:54,370-agent-INFO-vector_store.py-34-加载已有FAISS向量库成功
+2026-06-24 13:39:24,679-agent-INFO-vector_store.py-34-加载已有FAISS向量库成功
+2026-06-24 13:40:09,664-agent-INFO-vector_store.py-34-加载已有FAISS向量库成功
+2026-06-24 15:20:52,423-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:20:52,423-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人适用什么人群
+2026-06-24 15:20:58,242-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_robot_common_knowledge
+2026-06-24 15:20:58,242-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人适用人群'}
+2026-06-24 15:20:58,242-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='Error: get_robot_common_knowledge is not a valid tool, try one of [rag_summarize, get_weather, get_city].' name='get_robot_common_knowledge' tool_call_id='call_0aa8f97eb81240a499b2b544' status='error'
+2026-06-24 15:20:58,243-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:20:58,243-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | Error: get_robot_common_knowledge is not a valid tool, try one of [rag_summarize, get_weather, get_city].
+2026-06-24 15:21:03,602-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:21:03,602-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人适用人群'}
+2026-06-24 15:21:06,982-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫拖一体机器人适用于全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭，适合需要同时完成扫地和拖地清洁需求的用户。' name='rag_summarize' tool_call_id='call_fccebe4521fa41599a105d00'
+2026-06-24 15:21:06,983-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:21:06,983-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 扫拖一体机器人适用于全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭，适合需要同时完成扫地和拖地清洁需求的用户。
+2026-06-24 15:21:41,757-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:21:41,758-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人适用什么人群
+2026-06-24 15:21:48,218-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_robot_common_knowledge
+2026-06-24 15:21:48,218-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人适用人群及场景'}
+2026-06-24 15:21:48,218-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='Error: get_robot_common_knowledge is not a valid tool, try one of [rag_summarize, get_weather, get_city].' name='get_robot_common_knowledge' tool_call_id='call_4d9d1656389543b4b6162066' status='error'
+2026-06-24 15:21:48,219-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:21:48,219-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | Error: get_robot_common_knowledge is not a valid tool, try one of [rag_summarize, get_weather, get_city].
+2026-06-24 15:21:53,821-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:21:53,822-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人适用人群及场景'}
+2026-06-24 15:21:57,200-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫拖一体机器人适用于全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭，适合需要同时完成吸尘和拖地清洁的用户。' name='rag_summarize' tool_call_id='call_a94129ac5d1243ffa11c4726'
+2026-06-24 15:21:57,201-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:21:57,201-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 扫拖一体机器人适用于全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭，适合需要同时完成吸尘和拖地清洁的用户。
+2026-06-24 15:25:14,813-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:25:14,813-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人适用什么人群
+2026-06-24 15:25:21,386-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:25:21,386-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人适用人群有哪些'}
+2026-06-24 15:25:24,360-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫拖一体机器人适用人群包括：全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭；对日常清洁兼顾吸尘与拖地有需求的用户。' name='rag_summarize' tool_call_id='call_bab9635973c74a0d84284816'
+2026-06-24 15:25:24,361-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:25:24,361-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 扫拖一体机器人适用人群包括：全屋为瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭；对日常清洁兼顾吸尘与拖地有需求的用户。
+2026-06-24 15:26:23,287-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:26:23,287-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人在我所在地区的气温下如何保养
+2026-06-24 15:26:31,753-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_city
+2026-06-24 15:26:31,754-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {}
+2026-06-24 15:26:31,754-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='深圳' name='get_city' tool_call_id='call_be3d6f4f174e40a199bb7887'
+2026-06-24 15:26:31,754-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:26:31,754-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 深圳
+2026-06-24 15:26:37,704-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_weather
+2026-06-24 15:26:37,705-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'city': '深圳'}
+2026-06-24 15:26:37,705-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='深圳天气晴朗,气温26摄氏度' name='get_weather' tool_call_id='call_e3405eac07664599825418a8'
+2026-06-24 15:26:37,706-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:26:37,706-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 深圳天气晴朗,气温26摄氏度
+2026-06-24 15:26:45,255-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:26:45,255-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人在高温高湿地区或南方潮湿环境下如何保养维护'}
+2026-06-24 15:26:48,944-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='在高温高湿地区或南方潮湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网并擦拭底盘污垢；定期更换拖布等耗材；长期不用时应清空水箱、断电并将配件晾干存放。' name='rag_summarize' tool_call_id='call_c2709e117a5044cf9b2b5108'
+2026-06-24 15:26:48,946-agent-INFO-middleware.py-29-[before model]当前状态: 带有1条消息
+2026-06-24 15:26:48,946-agent-DEBUG-middleware.py-30-[before model]当前消息:类型为ToolMessage | 在高温高湿地区或南方潮湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网并擦拭底盘污垢；定期更换拖布等耗材；长期不用时应清空水箱、断电并将配件晾干存放。
+2026-06-24 15:31:11,606-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 15:31:11,606-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人在我所在地区的气温下如何保养
+2026-06-24 15:31:18,353-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_city
+2026-06-24 15:31:18,353-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {}
+2026-06-24 15:31:18,353-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州' name='get_city' tool_call_id='call_62664f40faff4b9a9021719e'
+2026-06-24 15:31:18,354-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 15:31:18,355-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州
+2026-06-24 15:31:23,196-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_weather
+2026-06-24 15:31:23,196-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'city': '广州'}
+2026-06-24 15:31:23,196-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州天气晴朗,气温26摄氏度' name='get_weather' tool_call_id='call_0c4ece7768a84f7db631e1e0'
+2026-06-24 15:31:23,197-agent-INFO-middleware.py-32-[before model]当前状态: 带有5条消息
+2026-06-24 15:31:23,197-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州天气晴朗,气温26摄氏度
+2026-06-24 15:31:28,547-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:31:28,547-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人在26摄氏度温暖潮湿环境下的保养方法'}
+2026-06-24 15:31:32,878-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='在26摄氏度温暖潮湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补充清水；每周清洗清洗槽滤网、擦拭底盘污垢，并对拖布进行手动深度清洗；定期更换拖布、滤网、边刷和滚刷；长期不用时应清空水箱、断电并将配件晾干存放；基站每周深度清洗一次，避免污垢堆积堵管。' name='rag_summarize' tool_call_id='call_6c58f293207346c8b571ef3a'
+2026-06-24 15:31:32,878-agent-INFO-middleware.py-32-[before model]当前状态: 带有7条消息
+2026-06-24 15:31:32,879-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 在26摄氏度温暖潮湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补充清水；每周清洗清洗槽滤网、擦拭底盘污垢，并对拖布进行手动深度清洗；定期更换拖布、滤网、边刷和滚刷；长期不用时应清空水箱、断电并将配件晾干存放；基站每周深度清洗一次，避免污垢堆积堵管。
+2026-06-24 15:46:51,429-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 15:46:51,430-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人在我所在地区的气温下如何保养
+2026-06-24 15:46:53,285-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_city
+2026-06-24 15:46:53,286-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {}
+2026-06-24 15:46:53,287-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州' name='get_city' tool_call_id='call_51200646dfd34070a408d969'
+2026-06-24 15:46:53,288-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 15:46:53,288-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州
+2026-06-24 15:46:55,289-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_weather
+2026-06-24 15:46:55,290-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'city': '广州'}
+2026-06-24 15:46:55,290-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州天气晴朗,气温26摄氏度' name='get_weather' tool_call_id='call_646388c16f704b30b6d151cd'
+2026-06-24 15:46:55,292-agent-INFO-middleware.py-32-[before model]当前状态: 带有5条消息
+2026-06-24 15:46:55,292-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州天气晴朗,气温26摄氏度
+2026-06-24 15:46:57,452-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:46:57,453-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人在高温高湿地区（如广州）的保养方法'}
+2026-06-24 15:47:01,719-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='在高温高湿地区（如广州），扫拖一体机器人保养需注意：必须开启拖布烘干，防止发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网、擦拭底盘污垢，并对基站进行深度清洗；定期更换拖布、滤网、边刷和滚刷；长期不用时清空水箱、断电，并将配件晾干存放。' name='rag_summarize' tool_call_id='call_66d5dfe9bf604f149f624d25'
+2026-06-24 15:47:01,721-agent-INFO-middleware.py-32-[before model]当前状态: 带有7条消息
+2026-06-24 15:47:01,721-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 在高温高湿地区（如广州），扫拖一体机器人保养需注意：必须开启拖布烘干，防止发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网、擦拭底盘污垢，并对基站进行深度清洗；定期更换拖布、滤网、边刷和滚刷；长期不用时清空水箱、断电，并将配件晾干存放。
+2026-06-24 15:49:41,841-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 15:49:41,841-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人在我所在地区的气温下如何保养
+2026-06-24 15:49:43,373-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_city
+2026-06-24 15:49:43,373-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {}
+2026-06-24 15:49:43,374-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州' name='get_city' tool_call_id='call_77178133fcd64799bb0676d4'
+2026-06-24 15:49:43,375-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 15:49:43,375-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州
+2026-06-24 15:49:45,581-agent-INFO-middleware.py-14-[tool monitor]执行的工具: get_weather
+2026-06-24 15:49:45,582-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'city': '广州'}
+2026-06-24 15:49:45,583-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='广州天气晴朗,气温26摄氏度' name='get_weather' tool_call_id='call_0563d6a67dd7469b800ad4f2'
+2026-06-24 15:49:45,584-agent-INFO-middleware.py-32-[before model]当前状态: 带有5条消息
+2026-06-24 15:49:45,584-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 广州天气晴朗,气温26摄氏度
+2026-06-24 15:49:48,324-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:49:48,324-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人在高温高湿环境下的保养方法'}
+2026-06-24 15:49:52,969-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='在高温高湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网并擦拭底盘污垢；定期更换拖布等耗材；长期不用时应清空水箱、断电，并将配件晾干存放。' name='rag_summarize' tool_call_id='call_47e1dcb95285400fa3d6aeba'
+2026-06-24 15:49:52,971-agent-INFO-middleware.py-32-[before model]当前状态: 带有7条消息
+2026-06-24 15:49:52,971-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 在高温高湿环境下，扫拖一体机器人需开启拖布烘干功能以防发霉异味；每次使用后倾倒污水、补加清水；每周清洗清洗槽滤网并擦拭底盘污垢；定期更换拖布等耗材；长期不用时应清空水箱、断电，并将配件晾干存放。
+2026-06-24 15:51:20,800-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 15:51:20,800-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人
+2026-06-24 15:51:23,124-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:51:23,124-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人功能特点和使用场景'}
+2026-06-24 15:51:27,424-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫拖一体机器人支持单独清扫或扫拖结合，可完全替代日常基础拖地，有效清除浮灰、脚印、轻微水渍和浅污渍，但无法处理厨房重度油污、浴室厚水垢及边角顽固污渍。适用于全屋硬质地面（如瓷砖、木地板、大理石），不适用于大面积厚地毯。使用时需注意：非专用清洁剂可能损坏设备，应使用品牌原装产品；所有机型均可关闭拖地功能仅吸尘，适配无需湿拖的场景。' name='rag_summarize' tool_call_id='call_09b48aa28b4e4ace98446275'
+2026-06-24 15:51:27,426-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 15:51:27,426-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 扫拖一体机器人支持单独清扫或扫拖结合，可完全替代日常基础拖地，有效清除浮灰、脚印、轻微水渍和浅污渍，但无法处理厨房重度油污、浴室厚水垢及边角顽固污渍。适用于全屋硬质地面（如瓷砖、木地板、大理石），不适用于大面积厚地毯。使用时需注意：非专用清洁剂可能损坏设备，应使用品牌原装产品；所有机型均可关闭拖地功能仅吸尘，适配无需湿拖的场景。
+2026-06-24 15:53:07,485-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 15:53:07,486-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫拖一体机器人推荐
+2026-06-24 15:53:15,796-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:53:15,796-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫拖一体机器人选购推荐 热门机型对比 适用场景'}
+2026-06-24 15:53:21,711-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫拖一体机器人适用于全屋瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭。选购时应优先考虑导航避障能力，其次为清洁能力，最后关注基站附加功能。优质电控机型出水均匀、可快速风干，无需手动擦干；合理调节水量、使用原装拖布不会损伤地面，但积水、劣质拖布或高浓度清洁剂可能磨损漆面或腐蚀美缝。相比纯扫地机器人，扫拖一体机型可处理脚印、水渍和浮尘污渍，但结构更复杂，需注意维护。预算有限、仅需干式清洁或家中多地毯者更适合纯扫地机型。' name='rag_summarize' tool_call_id='call_da6a26fbf3a748749c3c783e'
+2026-06-24 15:53:21,712-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 15:53:21,712-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 扫拖一体机器人适用于全屋瓷砖、木地板、大理石等硬质地面且无大面积厚地毯的家庭。选购时应优先考虑导航避障能力，其次为清洁能力，最后关注基站附加功能。优质电控机型出水均匀、可快速风干，无需手动擦干；合理调节水量、使用原装拖布不会损伤地面，但积水、劣质拖布或高浓度清洁剂可能磨损漆面或腐蚀美缝。相比纯扫地机器人，扫拖一体机型可处理脚印、水渍和浮尘污渍，但结构更复杂，需注意维护。预算有限、仅需干式清洁或家中多地毯者更适合纯扫地机型。
+2026-06-24 15:53:30,526-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 15:53:30,526-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '热门扫拖一体机器人机型推荐 参数对比 适用场景'}
+2026-06-24 15:53:35,201-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='参考资料未提供具体热门机型推荐、参数对比及适用场景的详细信息，仅说明选购原则：全屋硬质地面优先扫拖一体，关注导航避障、清洁能力及控水性能；强调使用原装拖布与专用清洁剂，避免损伤地面；指出高价不等于拖地更干净，需看核心配置。' name='rag_summarize' tool_call_id='call_2688d35138ea47cc9330f703'
+2026-06-24 15:53:35,202-agent-INFO-middleware.py-32-[before model]当前状态: 带有5条消息
+2026-06-24 15:53:35,202-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 参考资料未提供具体热门机型推荐、参数对比及适用场景的详细信息，仅说明选购原则：全屋硬质地面优先扫拖一体，关注导航避障、清洁能力及控水性能；强调使用原装拖布与专用清洁剂，避免损伤地面；指出高价不等于拖地更干净，需看核心配置。
+2026-06-24 16:09:25,601-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 16:09:25,603-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫地机器人推荐
+2026-06-24 16:09:32,298-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 16:09:32,298-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫地机器人选购推荐指南，包括预算、户型、地面材质、功能需求等关键因素'}
+2026-06-24 16:09:40,595-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='选购扫地机器人需结合预算、户型、地面材质及功能需求：避免功能冗余以降低故障率和维护成本；超薄机身可能牺牲吸力、续航并易卡机；千元内扫拖一体机多采用重力水箱，控水差，易留水渍，实用性低；务必使用原装清洁剂，以防堵塞、腐蚀或电路损坏。养宠家庭应选4000Pa以上大吸力、防缠绕双胶刷、自动集尘、AI避障和振动拖地机型，以应对毛发与污渍；木地板用户优先选择电控精准控水、低水量模式、自动抬拖布和轻柔拖地功能，防止积水损伤漆面。优质电控机型拖地后无需手动擦干，合理使用不会损伤地面，但劣质拖布、积水或非原装清洁剂可能造成磨损或腐蚀。' name='rag_summarize' tool_call_id='call_4ed9f83046694d96b27b23fe'
+2026-06-24 16:09:40,597-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 16:09:40,597-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 选购扫地机器人需结合预算、户型、地面材质及功能需求：避免功能冗余以降低故障率和维护成本；超薄机身可能牺牲吸力、续航并易卡机；千元内扫拖一体机多采用重力水箱，控水差，易留水渍，实用性低；务必使用原装清洁剂，以防堵塞、腐蚀或电路损坏。养宠家庭应选4000Pa以上大吸力、防缠绕双胶刷、自动集尘、AI避障和振动拖地机型，以应对毛发与污渍；木地板用户优先选择电控精准控水、低水量模式、自动抬拖布和轻柔拖地功能，防止积水损伤漆面。优质电控机型拖地后无需手动擦干，合理使用不会损伤地面，但劣质拖布、积水或非原装清洁剂可能造成磨损或腐蚀。
+2026-06-24 16:12:25,924-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 16:12:25,924-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫地机器人推荐
+2026-06-24 16:12:32,194-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 16:12:32,194-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫地机器人选购指南 推荐标准 功能对比'}
+2026-06-24 16:12:38,364-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='选购扫地机器人应避免功能冗余，按需选配以降低故障率和维护成本；不宜盲目追求超薄机身，以免影响吸力、续航和散热；千元内低价扫拖一体机型多采用重力水箱，控水能力差，易留水渍，拖地效果不佳；必须使用原装清洁剂，非原装产品可能导致堵塞、腐蚀或电路损坏。适用人群包括硬质地面家庭、上班族、养宠或有娃家庭，追求全自动干湿清洁。优质电控机型拖地后无需手动擦干，合理使用不会损伤地面。' name='rag_summarize' tool_call_id='call_d378f7a922ef40509246f238'
+2026-06-24 16:12:38,365-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 16:12:38,365-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 选购扫地机器人应避免功能冗余，按需选配以降低故障率和维护成本；不宜盲目追求超薄机身，以免影响吸力、续航和散热；千元内低价扫拖一体机型多采用重力水箱，控水能力差，易留水渍，拖地效果不佳；必须使用原装清洁剂，非原装产品可能导致堵塞、腐蚀或电路损坏。适用人群包括硬质地面家庭、上班族、养宠或有娃家庭，追求全自动干湿清洁。优质电控机型拖地后无需手动擦干，合理使用不会损伤地面。
+2026-06-24 16:44:23,506-agent-INFO-middleware.py-32-[before model]当前状态: 带有1条消息
+2026-06-24 16:44:23,507-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为HumanMessage | 扫地机器人推荐
+2026-06-24 16:44:28,489-agent-INFO-middleware.py-14-[tool monitor]执行的工具: rag_summarize
+2026-06-24 16:44:28,490-agent-INFO-middleware.py-15-[tool monitor]执行的参数: {'query': '扫地机器人选购推荐标准及不同场景适配机型'}
+2026-06-24 16:44:35,528-agent-INFO-middleware.py-19-[tool monitor]执行结果: content='扫地机器人选购应按需选配，避免功能冗余；超薄机身可能牺牲吸力、续航和稳定性；千元内扫拖一体机多采用重力水箱，控水差易留水渍，实用性低；禁用非原装清洁剂以防堵塞、腐蚀或电路损坏。不同场景适配如下：养宠家庭需4000Pa以上大吸力、防缠绕双胶刷、自动集尘、AI避障及振动拖地，以应对宠物毛发与局部污渍；木地板居家应优先电控精准控水、低水量模式、自动抬拖布和轻柔拖地，防止积水损伤漆面。优质电控机型拖地后无需手动擦干，正规机型合理使用不会损伤地面。' name='rag_summarize' tool_call_id='call_b6006e3d6e944c0785b0254e'
+2026-06-24 16:44:35,529-agent-INFO-middleware.py-32-[before model]当前状态: 带有3条消息
+2026-06-24 16:44:35,529-agent-DEBUG-middleware.py-33-[before model]当前消息:类型为ToolMessage | 扫地机器人选购应按需选配，避免功能冗余；超薄机身可能牺牲吸力、续航和稳定性；千元内扫拖一体机多采用重力水箱，控水差易留水渍，实用性低；禁用非原装清洁剂以防堵塞、腐蚀或电路损坏。不同场景适配如下：养宠家庭需4000Pa以上大吸力、防缠绕双胶刷、自动集尘、AI避障及振动拖地，以应对宠物毛发与局部污渍；木地板居家应优先电控精准控水、低水量模式、自动抬拖布和轻柔拖地，防止积水损伤漆面。优质电控机型拖地后无需手动擦干，正规机型合理使用不会损伤地面。

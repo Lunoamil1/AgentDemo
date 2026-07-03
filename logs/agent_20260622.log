@@ -1,0 +1,5 @@
+2026-06-22 15:04:02,648-agent-INFO-logger_handler.py-91-test
+2026-06-22 15:04:02,649-agent-ERROR-logger_handler.py-92-cuowu
+2026-06-22 15:04:02,649-agent-DEBUG-logger_handler.py-93-warn
+2026-06-22 15:04:02,649-agent-WARNING-logger_handler.py-94-debug
+2026-06-22 16:20:21,967-agent-ERROR-prompt_loader.py-38-Error 没找到main_prompt路径: 'report_prompt'
